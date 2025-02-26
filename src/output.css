@@ -599,6 +599,9 @@
   .right-\[650px\] {
     right: 650px;
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -806,11 +809,20 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-60 {
+    margin-bottom: calc(var(--spacing) * 60);
+  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-72 {
+    margin-left: calc(var(--spacing) * 72);
   }
   .ml-auto {
     margin-left: auto;
@@ -935,6 +947,9 @@
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-auto {
     height: auto;
   }
@@ -949,6 +964,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -985,6 +1003,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
   }
   .w-full {
     width: 100%;
@@ -1549,6 +1570,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
   .scroll-auto {
     scroll-behavior: auto;
   }
@@ -1789,6 +1813,9 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1828,6 +1855,9 @@
   .bg-radial {
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\'\/assets\/aibg\.png\'\)\] {
+    background-image: url('/assets/aibg.png');
   }
   .bg-\[url\(\'\/assets\/banner-bg\.png\'\)\] {
     background-image: url('/assets/banner-bg.png');
@@ -2009,6 +2039,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -2038,6 +2071,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -2120,6 +2156,9 @@
   .align-top {
     vertical-align: top;
   }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -2151,6 +2190,10 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   .leading-none {
     --tw-leading: 1;
@@ -2548,6 +2591,11 @@
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
+  .backdrop-blur-2xl {
+    --tw-backdrop-blur: blur(var(--blur-2xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
   .backdrop-blur-none {
     --tw-backdrop-blur:  ;
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -2832,13 +2880,6 @@
       }
     }
   }
-  .hover\:bg-orange-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-orange-700);
-      }
-    }
-  }
   .hover\:text-\[\#b66d42\] {
     &:hover {
       @media (hover: hover) {
@@ -2973,11 +3014,6 @@
   .md\:mt-40 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 40);
-    }
-  }
-  .md\:mr-10 {
-    @media (width >= 48rem) {
-      margin-right: calc(var(--spacing) * 10);
     }
   }
   .md\:mb-0 {
