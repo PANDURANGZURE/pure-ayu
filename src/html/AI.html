@@ -35,9 +35,10 @@
     </div>
 
     <div class="w-screen flex justify-center">
-        <div class="fixed  bottom-0">
-            <input  class="  border p-5 rounded-full " type="text" id="userInput" placeholder="Enter your prompt (use Markdown)">
-        <button onclick="fetchGeminiData()">Get Response</button>
+        <div class="fixed  bottom-10">
+            
+            <input class="border p-3 rounded-full w-96" type="text" id="userInput" placeholder="Enter your prompt (use Markdown)">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" onclick="fetchGeminiData()">Get Response</button>
         </div>
     </div>
         </div>
@@ -49,39 +50,45 @@
     </div>
 </body>
 <script>
+
+
     async function fetchGeminiData() {
-            const userInput = document.getElementById('userInput').value;
-            const apiKey = 'AIzaSyCQxUvqw4-kyf12XuqTNsnnD_NiE6mVdBk'; // Replace with your actual API key
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
+    const userInput = document.getElementById('userInput').value;
+    const apiKey = 'AIzaSyAISLA9Q3pHS97KIIHPn9XV53eaFhgOsVc'; // Replace with your valid API key
+    const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`;
 
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        contents: [{
-                            parts: [{
-                                text: userInput,
-                            }],
-                        }],
-                    }),
-                });
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                contents: [{ role: "user", parts: [{ text: userInput }] }]
+            }),
+        });
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const data = await response.json();
-                const responseText = data.candidates[0].content.parts[0].text;
-                const formattedHtml = marked.parse(responseText); // Parse Markdown
-                document.getElementById('apiResponse').innerHTML = formattedHtml; // Display as HTML
-
-            } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('apiResponse').textContent = 'Error fetching data.';
-            }
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
         }
+
+        const data = await response.json();
+
+        if (data?.candidates?.length > 0) {
+            const responseText = data.candidates[0].content.parts[0].text;
+            document.getElementById('apiResponse').innerHTML = marked.parse(responseText);
+        } else {
+            document.getElementById('apiResponse').textContent = 'No response from AI.';
+        }
+
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('apiResponse').textContent = `Error fetching data: ${error.message}`;
+    }
+}
+
+
+
 </script>
 </html>
