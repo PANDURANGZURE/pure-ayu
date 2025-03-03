@@ -34,11 +34,13 @@ loginBtn.addEventListener("click", async (e) => {
     try {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Logged in successfully!");
-        window.location.href = "../index.html";
+        window.location.href = "./src/html/index.html";
     } catch (error) {
         alert(error.message);
     }
 });
+
+
 
 // Register User
 registerBtn.addEventListener("click", async (e) => {
