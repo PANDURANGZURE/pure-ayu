@@ -26,7 +26,7 @@
         </div>
       </nav>
       
-      <h1 class="text-white font-bold text-3xl absolute top-40 right-[650px]">Pur - Aayu Center</h1>
+      <h1 class="text-white font-bold text-3xl absolute top-40 right-[650px]">Pure - Aayu Center</h1>
       
       <div>
         <div class="flex justify-center mt-20 pb-10 align-middle md:mt-40 ">
@@ -115,13 +115,57 @@
 
     <script>
         const products = [
-            { id: "HIBISCUS", imgSrc: "image1.jpg", description: "Nat Habit Sulfate-Free Natural Five Oils Hibiscus Hair Growth Shampoo, Navdha Shampoo for Women and Men (Pack of 1 X 250ml)", price:358, link: "https://amzn.in/d/9WLguNM" },
-            { id: "Herbal Tea", imgSrc: "image2.jpg", description: "Premium Herbal Tea Blend", price: 399, link: "#" },
-            { id: "Herbal Tablets", imgSrc: "image3.jpg", description: "Natural Herbal Supplement Tablets", price: 649, link: "#" },
-            { id: "Herbal Soap", imgSrc: "image4.jpg", description: "Handmade Herbal Soap with Essential Oils", price: 249, link: "#" },
-            { id: "Aloe Vera Gel", imgSrc: "image5.jpg", description: "Pure Aloe Vera Gel for Skin Care", price: 299, link: "#" },
-            { id: "Turmeric Capsules", imgSrc: "image6.jpg", description: "Organic Turmeric Capsules for Wellness", price: 549, link: "#" },
-            { id: "Ginger Powder", imgSrc: "image7.jpg", description: "Finely Ground Ginger Powder", price: 349, link: "#" }
+        { id: "HIBISCUS", imgSrc: "image1.jpg", description: "Nat Habit Sulfate-Free Natural Five Oils Hibiscus Hair Growth Shampoo, Navdha Shampoo for Women and Men (Pack of 1 X 250ml)", price: 358, link: "https://amzn.in/d/9WLguNM" },
+    { id: "Herbal Tea", imgSrc: "image2.jpg", description: "Premium Herbal Tea Blend", price: 399, link: "#" },
+    { id: "Herbal Tablets", imgSrc: "image3.jpg", description: "Natural Herbal Supplement Tablets", price: 649, link: "#" },
+    { id: "Herbal Soap", imgSrc: "image4.jpg", description: "Handmade Herbal Soap with Essential Oils", price: 249, link: "#" },
+    { id: "Aloe Vera Gel", imgSrc: "image5.jpg", description: "Pure Aloe Vera Gel for Skin Care", price: 299, link: "#" },
+    { id: "Turmeric Capsules", imgSrc: "image6.jpg", description: "Organic Turmeric Capsules for Wellness", price: 549, link: "#" },
+    { id: "Ginger Powder", imgSrc: "image7.jpg", description: "Finely Ground Ginger Powder", price: 349, link: "#" },
+    
+    { id: "Ashwagandha Capsules", imgSrc: "image8.jpg", description: "Stress Relief & Energy Booster", price: 599, link: "#" },
+    { id: "Neem Face Pack", imgSrc: "image9.jpg", description: "Natural Anti-Acne Face Mask", price: 325, link: "#" },
+    { id: "Brahmi Oil", imgSrc: "image10.jpg", description: "Ayurvedic Oil for Mental Clarity", price: 475, link: "#" },
+    { id: "Triphala Powder", imgSrc: "image11.jpg", description: "Digestive Cleanser Herbal Powder", price: 429, link: "#" },
+    { id: "Tulsi Drops", imgSrc: "image12.jpg", description: "Immunity Booster Herbal Extract", price: 299, link: "#" },
+    { id: "Moringa Powder", imgSrc: "image13.jpg", description: "Nutrient-Rich Herbal Supplement", price: 449, link: "#" },
+    { id: "Shilajit Resin", imgSrc: "image14.jpg", description: "Natural Energy & Stamina Booster", price: 1299, link: "#" },
+    { id: "Sandalwood Soap", imgSrc: "image15.jpg", description: "Skin Brightening Herbal Soap", price: 275, link: "#" },
+    { id: "Chyawanprash", imgSrc: "image16.jpg", description: "Ayurvedic Immunity Booster", price: 699, link: "#" },
+    { id: "Rose Water Mist", imgSrc: "image17.jpg", description: "Pure Hydrating Facial Spray", price: 299, link: "#" },
+    { id: "Kumkumadi Tailam", imgSrc: "image18.jpg", description: "Glow-Enhancing Face Oil", price: 1499, link: "#" },
+    { id: "Bhringraj Hair Oil", imgSrc: "image19.jpg", description: "Herbal Solution for Hair Fall", price: 549, link: "#" },
+    { id: "Giloy Juice", imgSrc: "image20.jpg", description: "Immunity Booster Herbal Juice", price: 389, link: "#" },
+    { id: "Amla Powder", imgSrc: "image21.jpg", description: "Rich Vitamin C for Hair & Skin", price: 399, link: "#" },
+    { id: "Fenugreek Capsules", imgSrc: "image22.jpg", description: "Supports Digestion & Hair Health", price: 349, link: "#" },
+    { id: "Safed Musli Powder", imgSrc: "image23.jpg", description: "Natural Stamina & Strength Booster", price: 1099, link: "#" },
+    { id: "Panch Tulsi Drops", imgSrc: "image24.jpg", description: "Five Tulsi Blend for Health", price: 349, link: "#" },
+    { id: "Saffron Face Cream", imgSrc: "image25.jpg", description: "Natural Brightening Face Moisturizer", price: 799, link: "#" },
+    { id: "Neem Tulsi Face Wash", imgSrc: "image26.jpg", description: "Anti-Acne Herbal Face Cleanser", price: 349, link: "#" },
+    { id: "Shatavari Powder", imgSrc: "image27.jpg", description: "Women’s Wellness Herbal Tonic", price: 599, link: "#" },
+    { id: "Ayurvedic Pain Relief Oil", imgSrc: "image28.jpg", description: "Herbal Massage Oil for Joints", price: 399, link: "#" },
+    { id: "Herbal Hair Mask", imgSrc: "image29.jpg", description: "Strengthening & Nourishing Hair Pack", price: 375, link: "#" },
+    { id: "Lavender Essential Oil", imgSrc: "image30.jpg", description: "Aromatherapy & Stress Relief", price: 425, link: "#" },
+    { id: "Himalayan Pink Salt", imgSrc: "image31.jpg", description: "Pure Mineral-Rich Salt", price: 299, link: "#" },
+    { id: "Jasmine Hair Oil", imgSrc: "image32.jpg", description: "Strengthening & Nourishing Oil", price: 350, link: "#" },
+    { id: "Rose Petal Powder", imgSrc: "image33.jpg", description: "Natural Skin Glow Enhancer", price: 389, link: "#" },
+    { id: "Licorice Powder", imgSrc: "image34.jpg", description: "Ayurvedic Remedy for Skin & Throat", price: 275, link: "#" },
+    { id: "Sesame Oil", imgSrc: "image35.jpg", description: "Cold-Pressed for Skin & Hair Care", price: 499, link: "#" },
+    { id: "Sandalwood Powder", imgSrc: "image36.jpg", description: "Natural Face Pack Ingredient", price: 599, link: "#" },
+    { id: "Clove Oil", imgSrc: "image37.jpg", description: "Pure Herbal Pain Relief Oil", price: 325, link: "#" },
+    { id: "Herbal Sleep Tea", imgSrc: "image38.jpg", description: "Relaxing Infusion with Chamomile", price: 449, link: "#" },
+    { id: "Ayurvedic Detox Juice", imgSrc: "image39.jpg", description: "Cleansing & Revitalizing Drink", price: 499, link: "#" },
+    { id: "Mulethi Powder", imgSrc: "image40.jpg", description: "Herbal Remedy for Cough & Digestion", price: 299, link: "#" },
+    { id: "Ayurvedic Tooth Powder", imgSrc: "image41.jpg", description: "Herbal Dental Care Formula", price: 199, link: "#" },
+    { id: "Fennel Seeds", imgSrc: "image42.jpg", description: "Natural Digestive & Mouth Freshener", price: 225, link: "#" },
+    { id: "Coconut Hair Oil", imgSrc: "image43.jpg", description: "Herbal Infused for Strong Hair", price: 399, link: "#" },
+    { id: "Amla Hair Oil", imgSrc: "image44.jpg", description: "Strengthens Roots & Promotes Growth", price: 349, link: "#" },
+    { id: "Jojoba Oil", imgSrc: "image45.jpg", description: "Ayurvedic Skin Hydration Oil", price: 650, link: "#" },
+    { id: "Natural Henna Powder", imgSrc: "image46.jpg", description: "Hair Coloring & Conditioning", price: 325, link: "#" },
+    { id: "Bael Fruit Powder", imgSrc: "image47.jpg", description: "Ayurvedic Digestive Tonic", price: 449, link: "#" },
+    { id: "Herbal Kajal", imgSrc: "image48.jpg", description: "Soothing Ayurvedic Eye Makeup", price: 199, link: "#" },
+    { id: "Ayurvedic Bath Powder", imgSrc: "image49.jpg", description: "Natural Skin Cleanser", price: 349, link: "#" },
+    { id: "Vetiver Water", imgSrc: "image50.jpg", description: "Cooling & Hydrating Mist", price: 275, link: "#" }
         ];
 
         function displayProducts(filteredProducts) {
@@ -133,9 +177,9 @@
                 productCard.className = "w-full max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow-xl";
                 productCard.innerHTML = `
                     <a href="${product.link}">
-                        <img class="p-8 rounded-t-lg" src="${product.imgSrc}" alt="${product.description}" />
+                        
                     </a>
-                    <div class="px-5 pb-5">
+                    <div class="px-5 pb-5 py-4">
                         <a href="${product.link}">
                             <h5 class="text-xl font-semibold tracking-tight text-black">${product.id}</h5>
                         </a>
