@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet"> </head>
 <body class="w-screen bg-[#e8e7e7]">
     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4"> -->
@@ -120,41 +121,143 @@
 <script>
     const data = [
     {
-        title: "Title 1",
-        image: "https://via.placeholder.com/150",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur.",
-        prevention: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur saepe."
+        title: "Acne (Yuvan Pidika)",
+        image: "./project image/project image/acne(yuvan pidika).png",
+        description: "Imbalance of Kapha and Pitta doshas leading to excessive sebum production and inflammation.",
+        prevention: "Use neem paste or neem oil to reduce bacterial infections. Apply turmeric paste mixed with honey to reduce inflammation. Avoid spicy, oily, and junk food. Eat cooling foods like cucumber and bitter gourd."
     },
     {
-        title: "Title 2",
-        image: "https://via.placeholder.com/150",
-        description: "Another description text here for testing purposes.",
-        prevention: "Prevention details for the second card. More text goes here."
+        title: "Eczema (Vicharchika)",
+        image: "./project image/project image/vicharchika.png",
+        description: "Aggravation of Kapha and Pitta doshas leading to dryness and itching.",
+        prevention: "Use Khadirarishta (herbal decoction) to purify the blood. Apply coconut oil to soothe and moisturize the skin. Use water boiled with neem leaves for bathing."
     },
     {
-        title: "Title 3",
-        image: "https://via.placeholder.com/150",
-        description: "Additional description for third card.",
-        prevention: "Prevention details for the third card."
+        title: "Psoriasis (Kitibha)",
+        image: "./project image/project image/kitibha.png",
+        description: "Imbalance of Vata and Kapha doshas leading to scaly, itchy patches.",
+        prevention: "Undergo Panchakarma Therapy (Vamana, Virechana, and Takradhara). Drink Manjistha decoction for blood purification. Apply Aloe Vera gel topically to soothe and heal."
     },
     {
-        title: "Title 4",
-        image: "https://via.placeholder.com/150",
-        description: "Description text for the fourth card.",
-        prevention: "Prevention information for the fourth card."
+        title: "Rosacea",
+        image: "./project image/project image/rosacea.png",
+        description: "Aggravation of Pitta dosha leading to facial redness.",
+        prevention: "Apply sandalwood and rose water mixture for cooling. Consume or apply coriander juice to reduce inflammation. Avoid hot, spicy foods and alcohol."
     },
     {
-        title: "Title 5",
-        image: "https://via.placeholder.com/150",
-        description: "Fifth card description here.",
-        prevention: "Prevention details for the fifth card."
+        title: "Hyperpigmentation (Vyanga)",
+        image: "./project image/project image/vyanga.png",
+        description: "Aggravated Pitta dosha causing melanin overproduction.",
+        prevention: "Apply paste of sandalwood and turmeric. Consume Amla regularly for natural skin lightening. Apply Aloe Vera gel to reduce dark spots."
     },
     {
-        title: "Title 6",
-        image: "https://via.placeholder.com/150",
-        description: "Sixth card description text.",
-        prevention: "Prevention information for the sixth card."
-    }
+        title: "Melasma",
+        image: "./project image/project image/melasma.png",
+        description: "Hormonal imbalance and Pitta-Kapha imbalance.",
+        prevention: "Massage face with Kumkumadi Tailam. Use a paste of licorice root and milk. Eat antioxidant-rich foods like spinach and berries."
+    },
+    {
+        title: "Dry Skin (Ruksha Twacha)",
+        image: "./project image/project image/ruksha twacha.png",
+        description: "Aggravation of Vata dosha leading to loss of moisture.",
+        prevention: "Massage with warm sesame oil before bathing. Apply milk and honey pack to hydrate the skin. Include ghee and hydrating fruits like watermelon in your diet."
+    },
+    {
+        title: "Sunburn",
+        image: "./project image/project image/sunburn.png",
+        description: "Excess Pitta dosha due to overexposure to the sun.",
+        prevention: "Apply Aloe Vera gel to cool and soothe. Apply fresh cucumber juice to the affected area. Drink plenty of water and consume coconut water."
+    },
+    {
+        title: "Wrinkles (Twak Vaivarnya)",
+        image: "./project image/project image/wrinkles.png",
+        description: "Vata dosha imbalance leading to reduced collagen production.",
+        prevention: "Consume Ashwagandha and Gotu Kola for anti-aging benefits. Apply honey and banana mask to improve elasticity. Include nuts, seeds, and fresh fruits in your diet."
+    },
+    {
+        title: "Dark Circles (Kati Chhaya)",
+        image: "./project image/project image/dark_circles.png",
+        description: "Stress, lack of sleep, and Pitta imbalance.",
+        prevention: "Massage gently under the eyes with almond oil. Place cucumber slices on eyes for soothing. Eat iron-rich foods like spinach and dates."
+    },
+    {
+        title: "Vitiligo (Shwitra)",
+        image: "./project image/project image/vitiligo.png",
+        description: "Autoimmune condition and imbalance of Vata and Pitta doshas.",
+        prevention: "Apply Bakuchi Oil topically to affected areas. Consume Haritaki for detoxification. Avoid sour foods and include turmeric and ginger in your diet."
+    },
+        {
+        title: "Hives (Sheetapitta)",
+        image: "./project image/project image/hives.png",
+        description: "Aggravation of Kapha and Vata doshas.",
+        prevention: "Apply neem paste to reduce itching. Apply or consume coriander juice to reduce heat. Avoid cold and sour foods."
+    },
+        {
+        title: "Skin Allergies",
+        image: "./project image/project image/skin allergies.png",
+        description: "Aggravation of Pitta and Kapha doshas.",
+        prevention: "Use a paste of Tulsi leaves for external application. Consume Triphala powder for detox. Avoid allergens and eat light, sattvic meals."
+    },
+        {
+        title: "Burns (Dagdha Vrana)",
+        image: "./project image/project image/dagdha vrana.png",
+        description: "Agni (fire) imbalance.",
+        prevention: "Apply Aloe Vera gel to reduce inflammation and promote healing. Apply ghee for cooling and soothing. Consume cooling foods like cucumber."
+    },
+        {
+        title: "Boils (Pidika)",
+        image: "./project image/project image/pidika.png",
+        description: "Aggravation of Pitta and Kapha doshas.",
+        prevention: "Apply turmeric and honey paste to draw out pus and heal. Apply neem leaves paste to prevent infection. Avoid fried and oily foods."
+    },
+        {
+        title: "Fungal Infections (Dadru)",
+        image: "./project image/project image/dadru.png",
+        description: "Imbalance of Kapha and Pitta doshas, along with fungal growth.",
+        prevention: "Apply neem oil or paste to affected areas. Consume Manjistha decoction for blood purification. Avoid fermented and heavy foods. Include bitter vegetables like neem and karela."
+    },
+        {
+        title: "Dandruff-related Skin Issues",
+        image: "./project image/project image/dandruff related skin issues.png",
+        description: "Aggravation of Vata and Kapha doshas causing dryness and flakes.",
+        prevention: "Massage the scalp with Bhringraj oil. Soak fenugreek seeds overnight, grind into a paste, and apply to the scalp. Consume omega-rich foods and avoid excessive salt."
+    },
+        {
+        title: "Cellulitis",
+        image: "./project image/project image/cellulitis.png",
+        description: "Bacterial infection due to weakened immunity.",
+        prevention: "Drink warm turmeric milk to fight infection. Use water boiled with neem leaves to clean the skin. Include garlic, ginger, and other immunity-boosting foods."
+    },
+        {
+        title: "Stretch Marks",
+        image: "./project image/project image/stretch_marks.png",
+        description: "Skin elasticity loss due to rapid weight changes or pregnancy.",
+        prevention: "Mix and apply coconut oil and Aloe Vera gel daily to reduce marks. Massage with Kumkumadi Tailam to promote skin regeneration. Consume vitamin E-rich foods like almonds and sunflower seeds."
+    },
+        {
+        title: "Scars and Wounds (Vrana Shotha)",
+        image: "./project image/project image/vrana shotha.png",
+        description: "Poor healing due to Vata and Pitta imbalance.",
+        prevention: "Apply honey and turmeric paste to scars for lightening and healing. Consume Ashwagandha powder to improve collagen production. Include foods rich in zinc and protein."
+    },
+        {
+        title: "Lichen Planus",
+        image: "./project image/project image/lichen planus.png",
+        description: "Autoimmune condition linked to imbalances in all three doshas.",
+        prevention: "Apply neem and turmeric paste to affected areas. Take Triphala powder internally for detoxification. Avoid acidic and spicy foods."
+    },
+        {
+        title: "Pruritus (Kandu)",
+        image: "./project image/project image/kandu.png",
+        description: "Aggravation of Kapha and Pitta doshas leading to itching.",
+        prevention: "Apply coriander seed paste to relieve itching. Use neem water for bathing to soothe the skin. Avoid hot, sour, and salty foods."
+    },
+        {
+        title: "Skin Tags",
+        image: "./project image/project image/skin tags.png",
+        description: "Kapha imbalance causing excess skin growth.",
+        prevention: "Apply castor oil and baking soda paste to dry out tags. Consume Ashwagandha and neem decoction to balance Kapha dosha. Reduce sugar and processed foods."
+    },
 ];
 
 const container = document.getElementById("container");

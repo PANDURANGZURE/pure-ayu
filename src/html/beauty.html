@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet">
 <body class="w-screen bg-[#e8e7e7]">
     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4"> -->
@@ -114,47 +115,170 @@
               <div class="text-center text-gray-400 mt-8 border-t border-gray-700 pt-4">
                 Copyright &copy; 2024. All Rights Reserved. <span class="text-[#b66d42]">Pure Ayurveda</span>
               </div>
+              <!-- <img src="././project image/project image/project image/acne.png" alt=""> -->
             </div>
           </footer>
 </body>
 <script>
     const data = [
     {
-        title: "Title 1",
-        image: "https://via.placeholder.com/150",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur.",
-        prevention: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur saepe."
+        "title": "Acne",
+        "image": "./project image/project image/acne.png",
+        "description": "Acne is caused by clogged pores, excess oil production, or bacteria.",
+        "prevention": "Apply a paste of turmeric and neem leaves. Drink Triphala powder with warm water. Avoid oily foods and include bitter vegetables."
     },
     {
-        title: "Title 2",
-        image: "https://via.placeholder.com/150",
-        description: "Another description text here for testing purposes.",
-        prevention: "Prevention details for the second card. More text goes here."
+        "title": "Dark Circles",
+        "image": "./project image/project image/dark_circles.png",
+        "description": "Dark circles are often caused by lack of sleep, stress, or poor circulation.",
+        "prevention": "Apply rose water and almond oil. Drink plenty of water and eat antioxidant-rich foods. Get 7-8 hours of sleep."
     },
     {
-        title: "Title 3",
-        image: "https://via.placeholder.com/150",
-        description: "Additional description for third card.",
-        prevention: "Prevention details for the third card."
+        "title": "Dull Skin",
+        "image": "./project image/project image/dull_skin.png",
+        "description": "Dull skin can result from dehydration, pollutants, or poor diet.",
+        "prevention": "Apply a sandalwood and rose water mask. Drink lemon water in the morning. Eat vitamin C and E-rich foods."
     },
     {
-        title: "Title 4",
-        image: "https://via.placeholder.com/150",
-        description: "Description text for the fourth card.",
-        prevention: "Prevention information for the fourth card."
+        "title": "Dry Skin",
+        "image": "./project image/project image/dry_skin.png",
+        "description": "Dry skin occurs due to insufficient moisture, weather, or dehydration.",
+        "prevention": "Massage with warm coconut oil. Apply aloe vera gel. Include ghee and avocados in your diet."
     },
     {
-        title: "Title 5",
-        image: "https://via.placeholder.com/150",
-        description: "Fifth card description here.",
-        prevention: "Prevention details for the fifth card."
+        "title": "Premature Aging",
+        "image": "./project image/project image/premature_aging.png",
+        "description": "Premature aging results from stress, environmental factors, and poor lifestyle.",
+        "prevention": "Use a turmeric and sandalwood face mask. Take Ashwagandha for stress reduction. Eat antioxidant-rich foods."
     },
     {
-        title: "Title 6",
-        image: "https://via.placeholder.com/150",
-        description: "Sixth card description text.",
-        prevention: "Prevention information for the sixth card."
-    }
+        "title": "Oily Skin",
+        "image": "./project image/project image/oily_skin.png",
+        "description": "Oily skin occurs due to excess sebum production, leading to clogged pores.",
+        "prevention": "Use a Multani Mitti face pack. Drink Tulsi tea. Avoid greasy, fried foods and eat cooling foods."
+    },
+    {
+        "title": "Uneven Skin Tone",
+        "image": "./project image/project image/uneven_skin_tone.png",
+        "description": "Uneven skin tone is caused by hyperpigmentation or sun damage.",
+        "prevention": "Apply a licorice and honey paste. Drink chamomile and licorice tea. Eat vitamin C-rich foods."
+    },
+    {
+        "title": "Sunburn",
+        "image": "./project image/project image/sunburn.png",
+        "description": "Sunburn results from overexposure to UV rays, causing irritation.",
+        "prevention": "Apply aloe vera gel and cucumber juice. Drink coconut water. Eat cooling foods like watermelon."
+    },
+    {
+        "title": "Skin Pigmentation",
+        "image": "./project image/project image/skin_pigmentation.png",
+        "description": "Pigmentation is caused by hormonal imbalance or sun exposure.",
+        "prevention": "Apply papaya pulp and aloe vera. Eat antioxidant-rich foods."
+    },
+    {
+        "title": "Wrinkles",
+        "image": "./project image/project image/wrinkles.png",
+        "description": "Wrinkles develop due to aging, collagen loss, or facial expressions.",
+        "prevention": "Use Brahmi oil or aloe vera gel. Eat collagen-boosting foods like bone broth."
+    },
+    {
+        "title": "Blackheads",
+        "image": "./project image/project image/blackheads.png",
+        "description": "Blackheads form when pores become clogged with oil and dead skin.",
+        "prevention": "Apply a scrub of rice flour and honey. Drink herbal teas to detoxify the skin."
+    },
+    {
+        "title": "Puffy Eyes",
+        "image": "./project image/project image/puffy_eyes.png",
+        "description": "Puffy eyes result from water retention, lack of sleep, or allergies.",
+        "prevention": "Use chilled cucumber slices. Reduce salt intake and stay hydrated."
+    },
+    {
+        "title": "Chapped Lips",
+        "image": "./project image/project image/chapped_lips.png",
+        "description": "Lips become dry and chapped due to dehydration or harsh weather.",
+        "prevention": "Apply ghee or honey before bed. Eat healthy fats like nuts and seeds."
+    },
+    {
+        "title": "Scalp Dryness",
+        "image": "./project image/project image/Scalp_dryness.png",
+        "description": "Dry scalp causes itching and dandruff.",
+        "prevention": "Massage warm coconut oil with Amla powder. Eat Omega-3-rich foods."
+    },
+    {
+        "title": "Hair Loss",
+        "image": "./project image/project image/Hair Loss.png",
+        "description": "Hair loss occurs due to stress, poor diet, or hormonal imbalance.",
+        "prevention": "Use Bhringraj oil for scalp massage. Eat iron-rich foods."
+    },
+    {
+        "title": "Split Ends",
+        "image": "./project image/project image/splits_ends.png",
+        "description": "Split ends occur due to excessive styling, dryness, or lack of nourishment.",
+        "prevention": "Apply hibiscus-infused oil. Increase protein intake."
+    },
+    {
+        "title": "Dandruff",
+        "image": "./project image/project image/dandruff.png",
+        "description": "Dandruff is caused by a dry scalp or fungal infections.",
+        "prevention": "Apply neem oil and lemon juice. Eat probiotic-rich foods."
+    },
+    {
+        "title": "Premature Graying",
+        "image": "./project image/project image/premature)greying.png",
+        "description": "Hair turns gray early due to genetics, stress, or nutritional deficiencies.",
+        "prevention": "Massage with Amla and Bhringraj oil. Eat vitamin B12-rich foods."
+    },
+    {
+        "title": "Weak Nails",
+        "image": "./project image/project image/weak nails.png",
+        "description": "Weak nails break easily due to nutritional deficiencies.",
+        "prevention": "Massage with warm sesame oil. Eat calcium-rich foods."
+    },
+    {
+        "title": "Skin Rashes",
+        "image": "./project image/project image/skin_rashes.png",
+        "description": "Skin rashes occur due to allergies, heat, or irritation.",
+        "prevention": "Apply sandalwood and rose water paste. Eat cooling foods."
+    },
+    {
+        "title": "Open Pores",
+        "image": "./project image/project image/open_pores.png",
+        "description": "Large pores make skin look rough and uneven.",
+        "prevention": "Apply a Multani Mitti mask. Eat fiber-rich foods."
+    },
+    {
+        "title": "Body Odor",
+        "image": "./project image/project image/body_odor.png",
+        "description": "Body odor results from sweat mixing with bacteria.",
+        "prevention": "Use sandalwood powder as deodorant. Eat detoxifying foods."
+    },
+    {
+        "title": "Brittle Hair",
+        "image": "./project image/project image/brittle_hairs.png",
+        "description": "Hair becomes brittle due to excessive styling or dryness.",
+        "prevention": "Apply hibiscus-infused oil. Consume healthy fats."
+    },
+    {
+        "title": "Cracked Heels",
+        "image": "./project image/project image/Cracked Heels.png",
+        "description": "Heels crack due to dryness or lack of moisture.",
+        "prevention": "Apply warm ghee before sleeping. Increase Omega-3 intake."
+    },
+    {
+        "title": "Skin Itching",
+        "image": "./project image/project image/Skin Itching.png",
+        "description": "Skin itching occurs due to dryness, allergies, or infections.",
+        "prevention": "Apply turmeric and neem paste. Stay hydrated."
+    },
+    {
+        "title": "Skin Tanning",
+        "image": "./project image/project image/Skin Tanning.png",
+        "description": "Skin tanning occurs due to sun exposure.",
+        "prevention": "Apply yogurt and lemon juice. Eat vitamin C-rich foods."
+    },
+   
+   
 ];
 
 const container = document.getElementById("container");

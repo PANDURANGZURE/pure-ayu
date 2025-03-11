@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet"> </head>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 <body class="w-screen bg-[#e8e7e7]">
     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4"> -->
         <div class="md:h-[500px] bg-cover  md:bg-[url('/assets/Memory.jpg')]">
@@ -120,40 +122,184 @@
 <script>
     const data = [
     {
-        title: "Title 1",
-        image: "https://via.placeholder.com/150",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur.",
-        prevention: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur saepe."
+        "title": "Memory Loss (Amnesia)",
+        "image": "./project image/project image/memory loss.png",
+        "description": "Brahmi and Ashwagandha support brain function, enhance focus, and improve memory.",
+        "prevention": "A diet rich in ghee, walnuts, almonds, and honey nourishes brain tissues."
     },
     {
-        title: "Title 2",
-        image: "https://via.placeholder.com/150",
-        description: "Another description text here for testing purposes.",
-        prevention: "Prevention details for the second card. More text goes here."
+        "title": "Poor Concentration",
+        "image": "./project image/project image/Poor Concentration.png",
+        "description": "Vacha and Gotu Kola improve cognitive function and enhance mental clarity.",
+        "prevention": "Rasayana therapy rejuvenates mental wellness and boosts memory retention."
     },
     {
-        title: "Title 3",
-        image: "https://via.placeholder.com/150",
-        description: "Additional description for third card.",
-        prevention: "Prevention details for the third card."
+        "title": "Forgetfulness",
+        "image": "./project image/project image/Forgetfulness.png",
+        "description": "Brahmi and Shankhapushpi work together to enhance memory and improve retention.",
+        "prevention": "Meditation and Pranayama reduce stress and strengthen memory power."
     },
     {
-        title: "Title 4",
-        image: "https://via.placeholder.com/150",
-        description: "Description text for the fourth card.",
-        prevention: "Prevention information for the fourth card."
+        "title": "Alzheimer’s Disease",
+        "image": "./project image/project image/Alzheimer’s Disease.png",
+        "description": "Brahmi, Ashwagandha, and Turmeric support brain function and reduce inflammation.",
+        "prevention": "Curcumin in Turmeric has neuroprotective properties that may help prevent Alzheimer’s."
     },
     {
-        title: "Title 5",
-        image: "https://via.placeholder.com/150",
-        description: "Fifth card description here.",
-        prevention: "Prevention details for the fifth card."
+        "title": "Dementia",
+        "image": "./project image/project image/Dementia.png",
+        "description": "Brahmi, Ashwagandha, and Mahasudarshan Churna help manage dementia symptoms.",
+        "prevention": "Reducing oxidative stress supports brain health and prevents cognitive decline."
     },
     {
-        title: "Title 6",
-        image: "https://via.placeholder.com/150",
-        description: "Sixth card description text.",
-        prevention: "Prevention information for the sixth card."
+        "title": "Lack of Mental Clarity",
+        "image": "./project image/project image/Lack of Mental Clarity.png",
+        "description": "Brahmi, Vacha, and Saffron help clear mental fog and improve cognitive sharpness.",
+        "prevention": "Regular intake of these herbs promotes mental clarity and focus."
+    },
+    {
+        "title": "Inability to Retain Information",
+        "image": "./project image/project image/Inability to Retain Information.png",
+        "description": "Shankhapushpi, Almonds, and Jatamansi enhance memory retention and mental endurance.",
+        "prevention": "Consuming soaked almonds in the morning improves cognitive function."
+    },
+    {
+        "title": "Mental Fatigue",
+        "image": "./project image/project image/Mental Fatigue.png",
+        "description": "Ashwagandha, Brahmi, and Shatavari help reduce mental fatigue and restore energy.",
+        "prevention": "Saffron and Turmeric reduce oxidative stress and rejuvenate the mind."
+    },
+    {
+        "title": "Confusion and Disorientation",
+        "image": "./project image/project image/Confusion and Disorientation.png",
+        "description": "Vacha, Brahmi, and Shankhapushpi improve memory and alleviate mental fog.",
+        "prevention": "Chamomile tea calms the mind and reduces confusion."
+    },
+    {
+        "title": "Lack of Focus",
+        "image": "./project image/project image/Lack of Focus.png",
+        "description": "Brahmi and Gotu Kola strengthen the brain and enhance concentration.",
+        "prevention": "Tulsi helps clear mental clutter and improves focus."
+    },
+    {
+        "title": "Brain Fog",
+        "image": "./project image/project image/Brain Fog.png",
+        "description": "Brahmi, Turmeric, and Amla clear mental fog and enhance memory function.",
+        "prevention": "Shankhapushpi supports cognitive clarity and brain health."
+    },
+    {
+        "title": "Poor Sleep (Affects Memory)",
+        "image": "./project image/project image/Poor Sleep (Affects Memory).png",
+        "description": "Ashwagandha and Brahmi relieve stress and improve sleep quality.",
+        "prevention": "Jatamansi and Valerian root aid restful sleep, crucial for memory consolidation."
+    },
+    {
+        "title": "Stress-Induced Memory Loss",
+        "image": "./project image/project image/Stress-Induced Memory Loss.png",
+        "description": "Brahmi and Ashwagandha help the body manage stress and support cognitive function.",
+        "prevention": "Saffron and Brahmi have a calming effect and reduce stress-related memory loss."
+    },
+    {
+        "title": "Vata Imbalance (Anxiety, Forgetfulness)",
+        "image": "./project image/project image/Vata Imbalance (Anxiety, Forgetfulness).png",
+        "description": "Brahmi and Shatavari balance Vata dosha, improving focus and mental clarity.",
+        "prevention": "Anahata Pranayama breathing technique reduces Vata imbalance and enhances memory."
+    },
+    {
+        "title": "Pitta Imbalance (Restlessness, Lack of Focus)",
+        "image": "./project image/project image/Pitta Imbalance (Restlessness, Lack of Focus).png",
+        "description": "Brahmi and Saffron calm the mind and clear mental clutter caused by excess Pitta.",
+        "prevention": "Cooling herbs like Mint and Licorice help pacify the Pitta dosha."
+    },
+    {
+        "title": "Kapha Imbalance (Lethargy, Mental Sluggishness)",
+        "image": "./project image/project image/Kapha Imbalance (Lethargy, Mental Sluggishness).png",
+        "description": "Ginger and Turmeric stimulate the mind and balance Kapha.",
+        "prevention": "Vacha and Brahmi reduce lethargy, improving mental clarity and memory."
+    },
+    {
+        "title": "Cognitive Decline in Old Age",
+        "image": "./project image/project image/Cognitive Decline in Old Age.png",
+        "description": "Brahmi, Ashwagandha, and Turmeric support brain health and slow cognitive decline.",
+        "prevention": "Amla provides antioxidants, reducing oxidative stress that accelerates aging."
+    },
+    {
+        "title": "Mild Cognitive Impairment",
+        "image": "./project image/project image/Mild Cognitive Impairment.png",
+        "description": "Brahmi improves cognitive function and is effective for mild cognitive impairments.",
+        "prevention": "Shankhapushpi strengthens the mind and enhances attention span."
+    },
+    {
+        "title": "Reduced Mental Sharpness",
+        "image": "./project image/project image/Reduced Mental Sharpness.png",
+        "description": "Brahmi, Vacha, and Shatavari enhance mental sharpness and clarity.",
+        "prevention": "Almonds, Ghee, and Honey support brain nourishment, improving sharpness."
+    },
+    {
+        "title": "Poor Spatial Memory",
+        "image": "./project image/project image/Poor Spatial Memory.png",
+        "description": "Brahmi improves memory and enhances spatial orientation.",
+        "prevention": "Gotu Kola and Jatamansi aid in strengthening spatial memory."
+    },
+    {
+        "title": "Impaired Learning Ability",
+        "image": "./project image/project image/Impaired Learning Ability.png",
+        "description": "Brahmi, Shankhapushpi, and Vacha enhance memory retention and learning ability.",
+        "prevention": "Ashwagandha improves overall cognitive capacity and focus."
+    },
+    {
+        "title": "Excessive Daydreaming",
+        "image": "./project image/project image/Excessive Daydreaming.png",
+        "description": "Brahmi and Ashwagandha enhance focus, reducing wandering thoughts.",
+        "prevention": "Saffron calms the mind and promotes mental concentration."
+    },
+    {
+        "title": "Depression (Memory Impairment due to Mood)",
+        "image": "./project image/project image/Depression (Memory Impairment due to Mood).png",
+        "description": "Ashwagandha and Brahmi boost mood and enhance cognitive function.",
+        "prevention": "Turmeric reduces inflammation linked to depression, supporting brain health."
+    },
+    {
+        "title": "Reduced Cognitive Flexibility",
+        "image": "./project image/project image/Reduced Cognitive Flexibility.png",
+        "description": "Brahmi and Shankhapushpi aid in mental adaptability and flexibility.",
+        "prevention": "Gotu Kola supports cognitive function and increases the ability to process new information."
+    },
+    {
+        "title": "Visual Memory Impairment",
+        "image": "./project image/project image/Visual Memory Impairment.png",
+        "description": "Brahmi and Ginkgo Biloba improve blood circulation to the brain, enhancing visual memory.",
+        "prevention": "Amla supports brain health and boosts cognitive function."
+    },
+    {
+        "title": "Post-Trauma Memory Loss",
+        "image": "./project image/project image/Post-Trauma Memory Loss.png",
+        "description": "Brahmi, Ashwagandha, and Shatavari help in trauma recovery and enhance memory.",
+        "prevention": "Turmeric reduces inflammation in the brain and aids in healing."
+    },
+    {
+        "title": "Lack of Mental Resilience",
+        "image": "./project image/project image/Lack of Mental Resilience.png",
+        "description": "Ashwagandha and Brahmi build mental resilience and help manage emotional stress.",
+        "prevention": "Shankhapushpi aids in improving mental strength and cognitive stability."
+    },
+    {
+        "title": "Lack of Cognitive Agility",
+        "image": "./project image/project image/Lack of Cognitive Agility.png",
+        "description": "Brahmi and Gotu Kola enhance cognitive agility by improving neuroplasticity.",
+        "prevention": "Vacha sharpens mental agility and improves brain performance."
+    },
+    {
+        "title": "Impaired Memory due to Hormonal Changes",
+        "image": "./project image/project image/Impaired Memory due to Hormonal Changes.png",
+        "description": "Ashwagandha and Shatavari support cognitive function during hormonal changes.",
+        "prevention": "Turmeric reduces inflammation and helps maintain brain health."
+    },
+    {
+        "title": "Traumatic Brain Injury (TBI) Related Memory Problems",
+        "image": "./project image/project image/Traumatic Brain Injury (TBI) Related Memory Problems.png",
+        "description": "Brahmi and Ashwagandha aid in brain healing and support cognitive recovery.",
+        "prevention": "Amla and Turmeric promote neuroprotection and brain regeneration."
     }
 ];
 

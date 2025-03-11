@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet"> </head>
 <body class="w-screen bg-[#e8e7e7]">
     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4"> -->
@@ -121,40 +122,208 @@
 <script>
     const data = [
     {
-        title: "Title 1",
-        image: "https://via.placeholder.com/150",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur.",
-        prevention: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur saepe."
+        title: "Ayurvedic Menstrual Health",
+        image: "./project image/project image/Ayurvedic Menstrual Health.png",
+        description: "Balancing doshas (Vata, Pitta, Kapha) for regular cycles. Using herbs like Ashoka and Shatavari for hormonal balance.",
+        prevention: "Identifying and balancing doshas through diet and lifestyle to manage menstrual discomfort."
     },
     {
-        title: "Title 2",
-        image: "https://via.placeholder.com/150",
-        description: "Another description text here for testing purposes.",
-        prevention: "Prevention details for the second card. More text goes here."
+        "title": "Ayurvedic Postpartum Care",
+        "image": "./project image/project image/Ayurvedic Postpartum Care.png",
+        "description": "Focus on restoring Vata dosha after childbirth. Using warm oils, massage, and specific diets for recovery.",
+        "prevention": "Using sesame oil massages and warm, nourishing foods to restore Vata balance after delivery."
     },
     {
-        title: "Title 3",
-        image: "https://via.placeholder.com/150",
-        description: "Additional description for third card.",
-        prevention: "Prevention details for the third card."
+        title: "Ayurvedic Menopause Management",
+        image: "./project image/project image/Ayurvedic Menopause Management.png",
+        description: "Managing symptoms like hot flashes with cooling herbs and balancing Pitta dosha. Focus on emotional well-being.",
+        prevention: "Using herbs like Shatavari and Guduchi to cool the body and manage menopausal symptoms."
     },
     {
-        title: "Title 4",
-        image: "https://via.placeholder.com/150",
-        description: "Description text for the fourth card.",
-        prevention: "Prevention information for the fourth card."
+        title: "Ayurvedic Digestive Health",
+        image: "./project image/project image/Ayurvedic Digestive Health.png",
+        description: "Improving digestion with Triphala, ginger, and cumin. Balancing Agni (digestive fire) for overall health.",
+        prevention: "Consuming warm, easily digestible foods and spices to enhance digestive fire."
     },
     {
-        title: "Title 5",
-        image: "https://via.placeholder.com/150",
-        description: "Fifth card description here.",
-        prevention: "Prevention details for the fifth card."
+        title: "Ayurvedic Skin Care",
+        image: "./project image/project image/Ayurvedic Skin Care.png",
+        description: "Using herbs like Neem and Turmeric for skin health. Balancing Pitta dosha to prevent skin issues.",
+        prevention: "Using cooling herbs and oils to soothe irritated skin and balance Pitta dosha."
     },
     {
-        title: "Title 6",
-        image: "https://via.placeholder.com/150",
-        description: "Sixth card description text.",
-        prevention: "Prevention information for the sixth card."
+        title: "Ayurvedic Hair Care",
+        "image": "./project image/project image/Ayurvedic hair Care.png",
+        "description": "Promoting hair growth with Bhringraj and Amla. Using herbal oils and therapies for scalp health.",
+        "prevention": "Applying oils infused with Bhringraj and Amla to nourish the scalp and promote hair growth."
+    },
+    {
+        "title": "Ayurvedic Stress Management",
+        "image": "./project image/project image/Ayurvedic Stress Management.png",
+        "description": "Using herbs like Ashwagandha and Brahmi for mental clarity. Practicing meditation and yoga for stress reduction.",
+        "prevention": "Practicing mindfulness and breathing exercises to calm the mind and reduce stress."
+    },
+    {
+        title: "Ayurvedic Sleep Improvement",
+        image: "./project image/project image/Ayurvedic Sleep Improvement.png",
+        description: "Using herbs like Jatamansi and Valerian for better sleep. Establishing a calming bedtime routine.",
+        prevention: "Consuming warm herbal teas before bed to promote relaxation and improve sleep quality."
+    },
+    {
+        title: "Ayurvedic Weight Management",
+        image: "./project image/project image/Ayurvedic Weight Management.png",
+        description: "Balancing Kapha dosha through diet and exercise. Using Triphala and Guggul for detoxification.",
+        prevention: "Consuming light, warm foods and spices to balance Kapha and support weight management."
+    },
+    {
+        title: "Ayurvedic Detoxification (Panchakarma)",
+        image: "./project image/project image/Ayurvedic Detoxification (Panchakarma).png",
+        description: "Using therapies like Vamana, Virechana, and Basti to eliminate toxins. Promoting overall well-being.",
+        prevention: "Using purgation therapy to cleanse the digestive tract and eliminate Pitta dosha."
+    },
+    {
+        title: "Ayurvedic Joint Health",
+        image: "./project image/project image/Ayurvedic Joint Health.png",
+        description: "Managing arthritis and joint pain with herbs like Guggul and Turmeric. Using warm oil massages (Abhyanga).",
+        prevention: "Applying warm herbal oils to joints to reduce inflammation and improve mobility."
+    },
+    {
+        title: "Ayurvedic Immunity Boost",
+        image: "./project image/project image/Ayurvedic Immunity Boost.png",
+        description: "Strengthening immunity with herbs like Amalaki and Guduchi. Maintaining balanced doshas for robust health.",
+        prevention: "Using rejuvenating herbs to enhance Ojas (vitality) and strengthen the immune system."
+    },
+    {
+        title: "Ayurvedic Respiratory Health",
+        image: "./project image/project image/Ayurvedic Respiratory Health.png",
+        description: "Managing asthma and allergies with herbs like Tulsi and Ginger. Using steam inhalation and herbal remedies.",
+        prevention: "Inhaling steam infused with herbs to clear respiratory passages and relieve congestion."
+    },
+    {
+        "title": "Ayurvedic Heart Health",
+        "image": "./project image/project image/Ayurvedic Heart Health.png",
+        "description": "Supporting cardiovascular health with Arjuna and Guggul. Managing stress and maintaining a healthy diet.",
+        "prevention": "Using Arjuna bark to strengthen the heart and improve cardiovascular function."
+    },
+    {
+        title: "Ayurvedic Diabetes Management",
+        "image": "./project image/project image/Ayurvedic Diabetes Management.png",
+        "description": "Managing blood sugar levels with herbs like Neem and Turmeric. Balancing Kapha dosha through diet.",
+        "prevention": "Using Neem to help regulate blood sugar levels and improve insulin sensitivity."
+    },
+    {
+        "title": "Ayurvedic Thyroid Support",
+        "image": "./project image/project image/Ayurvedic Thyroid Support.png",
+        "description": "Balancing thyroid function with herbs like Ashwagandha and Kanchanar. Managing Vata and Kapha doshas.",
+        "prevention": "Using Kanchanar to support healthy thyroid function and balance hormonal levels."
+    },
+    {
+        "title": "Ayurvedic Eye Health",
+        "image": "./project image/project image/Ayurvedic Eye Health.png",
+        "description": "Improving vision and eye health with Triphala and Rosewater. Practicing eye exercises and maintaining a balanced diet.",
+        "prevention": "Using Triphala water to cleanse and soothe the eyes, improving vision."
+    },
+    {
+        "title": "Ayurvedic Oral Health",
+        "image": "./project image/project image/Ayurvedic Oral Health.png",
+        "description": "Maintaining oral hygiene with Neem and Triphala. Using oil pulling and herbal mouthwashes.",
+        "prevention": "Swishing herbal oils in the mouth to remove toxins and improve oral hygiene."
+    },
+    {
+        "title": "Ayurvedic Kidney Health",
+        "image": "./project image/project image/Ayurvedic Kidney Health.png",
+        "description": "Supporting kidney function with herbs like Gokshura and Punarnava. Maintaining hydration and a balanced diet.",
+        "prevention": "Using Gokshura to support kidney function and promote urinary tract health."
+    },
+    {
+        "title": "Ayurvedic Liver Detox",
+        "image": "./project image/project image/Ayurvedic Liver Detox.png",
+        "description": "Cleansing the liver with herbs like Bhumyamalaki and Kalmegh. Supporting Pitta balance for optimal liver function.",
+        "prevention": "Using Kalmegh to detoxify the liver and improve its overall function."
+    },      
+    {
+        "title": "Ayurvedic Neurological Health",
+        "image": "./project image/project image/Ayurvedic Neurological Health.png",
+        "description": "Supporting nerve function with herbs like Brahmi and Shankhapushpi. Managing Vata dosha for mental clarity.",
+        "prevention": "Using Brahmi to enhance memory and cognitive function, promoting neurological health."
+    },
+    {
+        "title": "Ayurvedic Pain Management",
+        "image": "./project image/project image/Ayurvedic Pain Management.png",
+        "description": "Relieving chronic pain with herbs like Shallaki and Ginger. Using warm poultices and herbal oils.",
+        "prevention": "Using Shallaki to reduce inflammation and relieve joint pain and stiffness."
+    },
+    {
+        "title": "Ayurvedic Children's Health",
+        "image": "./project image/project image/Ayurvedic Children's Health.png",
+        "description": "Supporting children's immunity and growth with herbs like Ashwagandha and Shatavari. Maintaining balanced doshas.",
+        "prevention": "Using Ashwagandha to support healthy growth and development in children."
+    },
+    {
+        "title": "Ayurvedic Geriatric Care",
+        "image": "./project image/project image/Ayurvedic Geriatric Care.png",
+        "description": "Managing age-related issues with herbs like Triphala and Ashwagandha. Focusing on Vata balance and rejuvenation.",
+        "prevention": "Using Triphala to support digestive health and promote regular bowel movements in the elderly."
+    },
+    {
+        "title": "Ayurvedic Emotional Balance",
+        "image": "./project image/project image/Ayurvedic Emotional Balance.png",
+        "description": "Managing emotional well-being with herbs like Jatamansi and Rose. Practicing mindfulness and meditation.",
+        "prevention": "Using Rose essential oil and Rosewater to calm the mind and promote emotional balance."
+    },
+    {
+        title: "Ayurvedic Seasonal Cleansing",
+        image: "./project image/project image/Ayurvedic Seasonal Cleansing.png",
+        "description": "Adapting diet and lifestyle according to seasons. Using herbs like Triphala for seasonal detox.",
+        "prevention": "Using Triphala to cleanse the body during seasonal transitions and maintain dosha balance."
+    },
+    {
+        "title": "Ayurvedic Wound Healing",
+        "image": "./project image/project image/Ayurvedic Wound Healing.png",
+        "description": "Promoting wound healing with herbs like Turmeric and Neem. Applying herbal pastes and oils topically.",
+        "prevention": "Using Turmeric paste to reduce inflammation and promote faster wound healing."
+    },
+    {
+        "title": "Ayurvedic Dental Care",
+        "image": "./project image/project image/Ayurvedic Dental Care.png",
+        "description": "Strengthening gums and teeth with herbs like Khadir and Babool. Using herbal tooth powders and oils.",
+        "prevention": "Using Khadir extract to strengthen gums and prevent dental problems."
+    },
+    {
+        "title": "Ayurvedic Sinus Relief",
+        "image": "./project image/project image/Ayurvedic Sinus Relief.png",
+        "description": "Managing sinus congestion with herbs like Tulsi and Ginger. Using nasal drops and steam inhalation.",
+        "prevention": "Using Tulsi infused nasal drops to clear sinus passages and relieve congestion."
+    },
+    {
+        "title": "Ayurvedic Allergy Management",
+        "image": "./project image/project image/Ayurvedic Allergy Management.png",
+        "description": "Managing allergies with herbs like Haridra and Triphala. Balancing Kapha and Pitta doshas.",
+        "prevention": "Using Haridra (Turmeric) to reduce allergic reactions and inflammation."
+    },
+    {
+        "title": "Ayurvedic Blood Purification",
+        "image": "./project image/project image/Ayurvedic Blood Purification.png",
+        "description": "Cleansing the blood with herbs like Manjistha and Neem. Supporting Pitta balance for healthy blood.",
+        "prevention": "Using Manjistha to purify the blood and improve skin health."
+    },
+    {
+        "title": "Ayurvedic Joint Flexibility",
+        "image": "./project image/project image/Ayurvedic Joint Flexibility.png",
+        "description": "Improving joint flexibility with herbs like Guggul and Ashwagandha. Practicing gentle yoga and massage.",
+        "prevention": "Using Guggul to reduce joint stiffness and improve flexibility."
+    },
+    {
+        "title": "Ayurvedic Lymphatic Drainage",
+        "image": "./project image/project image/Ayurvedic Lymphatic Drainage.png",
+        description: "Supporting lymphatic function with herbs like Punarnava and Manjistha. Using dry brushing and massage.",
+        prevention: "Using Punarnava to promote lymphatic drainage and reduce swelling."
+    },
+    {
+        title: "Ayurvedic Voice Care",
+        image: "./project image/project image/Ayurvedic Voice Care.png",
+        description: "Maintaining vocal cord health with herbs like Yashtimadhu and Ginger. Using herbal gargles and teas.",
+        prevention: "Using Yashtimadhu (Licorice) to soothe the throat and improve vocal cord health."
     }
 ];
 

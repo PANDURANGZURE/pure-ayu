@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet">
 
 <body class="w-screen bg-[#e8e7e7]">
@@ -121,40 +122,184 @@
 <script>
     const data = [
     {
-        title: "Title 1",
-        image: "https://via.placeholder.com/150",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur.",
-        prevention: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui recusandae excepturi possimus consequatur saepe."
+        title: "Hair Fall",
+        image: "./project image/project image/acne.png",
+        description: "Hair fall occurs when hair strands shed excessively due to weakened roots, poor scalp health, or lack of nourishment.",
+        prevention: "Use bhringraj oil for regular scalp massage to strengthen hair roots and promote growth. Include sesame seeds, almonds, and Amla (Indian gooseberry) in your diet. Mix Amla powder with yogurt and apply to the scalp; wash after 30 minutes."
     },
     {
-        title: "Title 2",
-        image: "https://via.placeholder.com/150",
-        description: "Another description text here for testing purposes.",
-        prevention: "Prevention details for the second card. More text goes here."
+        title: "Dandruff",
+        image: "./project image/project image/dandruff.png",
+        description: "Dandruff is a scalp condition characterized by white flakes, itchiness, and irritation caused by dry skin or fungal infections.",
+        prevention: "Use neem leaves boiled in water to wash your scalp. Mix yogurt, fenugreek seed powder, and lemon juice; apply for 30 minutes before rinsing. Massage with coconut oil infused with camphor to soothe itchiness."
     },
     {
-        title: "Title 3",
-        image: "https://via.placeholder.com/150",
-        description: "Additional description for third card.",
-        prevention: "Prevention details for the third card."
+        title: "Premature Greying",
+        image: "./project image/project image/premature)greying.png",
+        description: "Premature greying occurs when hair loses its natural pigment early due to genetic, nutritional, or environmental factors.",
+        prevention: "Apply bhringraj and Amla oil to slow down greying. Boil curry leaves in coconut oil and use as a daily hair oil. Add sesame seeds and foods rich in copper and iron to your diet."
     },
     {
-        title: "Title 4",
-        image: "https://via.placeholder.com/150",
-        description: "Description text for the fourth card.",
-        prevention: "Prevention information for the fourth card."
+        title: "Dry and Brittle Hair",
+        image: "./project image/project image/brittle_hairs.png",
+        description: "Dry and brittle hair is rough, fragile, and prone to breakage due to lack of hydration and excessive styling.",
+        prevention: "Aloe vera gel acts as a natural conditioner. Use a mix of almond and castor oil for weekly hair massages. Mix coconut milk, honey, and almond oil; apply for 1 hour before washing."
     },
     {
-        title: "Title 5",
-        image: "https://via.placeholder.com/150",
-        description: "Fifth card description here.",
-        prevention: "Prevention details for the fifth card."
+        title: "Oily Scalp",
+        image: "./project image/project image/oily_scalp.png",
+        description: "An oily scalp occurs when the sebaceous glands produce excess oil, leading to greasy hair and scalp issues.",
+        prevention: "Use shikakai powder as a natural shampoo to control oil. Apply Multani mitti (Fuller’s Earth) paste to absorb excess oil. Wash with diluted apple cider vinegar once a week."
     },
     {
-        title: "Title 6",
-        image: "https://via.placeholder.com/150",
-        description: "Sixth card description text.",
-        prevention: "Prevention information for the sixth card."
+        title: "Split Ends",
+        image: "./project image/project image/splits_ends.png",
+        description: "Split ends occur when hair strands become frayed and damaged at the tips, leading to breakage.",
+        prevention: "Massage with warm coconut oil infused with hibiscus flowers. Apply a mask of mashed banana, yogurt, and honey. Trim hair every 6-8 weeks to avoid further damage."
+    },
+    {
+        title: "Hair Thinning",
+        image: "./project image/project image/hair_thinning.png",
+        description: "Hair thinning results in reduced hair density, making hair appear flat and weak.",
+        prevention: "Use fenugreek seeds soaked overnight; grind into a paste and apply. Massage with bhringraj oil to promote thickness. Include high-protein foods like lentils and nuts in your diet."
+    },
+    {
+        title: "Frizzy Hair",
+        image: "./project image/project image/frizzy_hairs.png",
+        description: "Frizzy hair is unmanageable, rough, and lacks smoothness due to dryness and humidity.",
+        prevention: "Use argan oil or almond oil for deep hydration. Apply a mask of curd and honey for 30 minutes weekly. Rinse with hibiscus flower-infused water."
+    },
+    {
+        title: "Itchy Scalp",
+        image: "./project image/project image/Itchy_scalp.png",
+        description: "An itchy scalp is characterized by persistent irritation, which may be caused by dryness or infections.",
+        prevention: "Boil neem leaves and use the water to rinse your scalp. Massage with tea tree oil diluted in coconut oil. Apply aloe vera gel directly to the scalp for relief."
+    },
+    {
+        title: "Alopecia (Bald Patches)",
+        image: "./project image/project image/alopecia.png",
+        description: "Alopecia causes sudden hair loss in patches due to autoimmune issues, stress, or nutritional deficiencies.",
+        prevention: "Use ashwagandha to reduce stress and promote hair growth. Apply onion juice on bald patches daily. Massage with Brahmi and bhringraj oil."
+    },
+    {
+        title: "Heat-Damaged Hair",
+        image: "./project image/project image/heat_damage_hair.png",
+        description: "Frequent use of blow dryers, straighteners, or curling irons leads to heat damage in hair, making it dry and brittle.",
+        prevention: "Apply coconut oil infused with hibiscus flowers to restore moisture. Use a mask of aloe vera gel and vitamin E oil. Avoid heat styling or use a heat protectant made from natural oils like argan oil."
+    },
+    {
+        title: "Scalp Acne",
+        image: "./project image/project image/scalp_acne.png",
+        description: "Blocked hair follicles due to excess oil or dirt lead to scalp acne, causing inflammation and discomfort.",
+        prevention: "Use neem paste or tulsi paste directly on the affected areas. Wash with diluted apple cider vinegar or rose water to maintain pH balance. Mix turmeric powder with water and apply it to reduce inflammation."
+    },
+    {
+        title: "Hair Odor",
+        image: "./project image/project image/hair_odor.png",
+        description: "Poor scalp hygiene, fungal infections, or sweating can cause persistent hair odor.",
+        prevention: "Use water boiled with mint leaves for a fresh aroma. Apply yogurt and lemon juice to neutralize odors. Use shikakai powder as a natural cleanser."
+    },
+    {
+        title: "Patchy Hair Loss (Telogen Effluvium)",
+        image: "./project image/project image/patchy_hair_loss.png",
+        description: "Stress, illness, or hormonal imbalance can cause sudden hair loss in patches.",
+        prevention: "Apply bhringraj or brahmi oil to promote regrowth. Massage the scalp with a paste of onion juice and honey. Include protein-rich foods like lentils and leafy greens."
+    },
+    {
+        title: "Eczema on Scalp",
+        image: "./project image/project image/Eczema_scalp.png",
+        description: "Inflammation or allergic reactions on the scalp can lead to eczema, causing redness, irritation, and itching.",
+        prevention: "Apply a paste made from turmeric and coconut oil to reduce redness. Use neem or tea tree oil for its antifungal properties. Aloe vera gel can soothe irritation and itching."
+    },
+    {
+        title: "Hair Color Fading",
+        image: "./project image/project image/hair_colour_fading.png",
+        description: "Sun exposure or chemical treatments cause hair color to fade, leading to dull and lackluster hair.",
+        prevention: "Massage with Amla oil to enhance natural color. Use black tea or coffee rinse to naturally darken hair. Apply henna mixed with beetroot juice for a natural tint."
+    },
+    {
+        title: "Weak and Lifeless Hair",
+        image: "./project image/project image/weak and lifeless hair.png",
+        description: "Poor nutrition, lack of care, or dehydration leads to weak and lifeless hair.",
+        prevention: "Use shatavari and ashwagandha supplements for rejuvenation. Massage with almond oil for deep nourishment. Apply a mask of mashed avocado and coconut milk weekly."
+    },
+    {
+        title: "Seasonal Hair Loss",
+        image: "./project image/project image/seasonal hair loss.png",
+        description: "Changes in weather can lead to seasonal hair loss, especially during transitions between seasons",
+        prevention: "Use bhringraj oil during winter and aloe vera gel in summer. Apply a fenugreek seed and curd paste during seasonal transitions. Include seasonal fruits and vegetables rich in vitamins."
+    },
+    {
+        title: "Hair Texture Issues",
+        image: "./project image/project image/hair texture issues.png",
+        description: "Environmental factors or lack of moisture can lead to poor hair texture, making it rough and unmanageable.",
+        prevention: "Massage with argan oil for smoothness. Use a mixture of yogurt, honey, and olive oil to improve texture. Finish with rice water rinse to enhance shine."
+    },
+    {
+        title: "Hair Graying Due to Stress",
+        image: "./project image/project image/hair greying issues.png",
+        description: "Stress-induced melanin depletion causes premature graying of hair.",
+        prevention: "Use brahmi and ashwagandha tea to manage stress. Massage the scalp with a mixture of Amla and sesame oil. Include vitamin B12-rich foods like eggs and dairy products."
+    },
+    {
+        title: "Sun-Damaged Hair",
+        image: "./project image/project image/sun_damage_hair.png",
+        description: "Excessive sun exposure can weaken hair cuticles, causing dryness, brittleness, and fading color.",
+        prevention: "Wear a hat or use a scarf when exposed to the sun. Apply coconut oil or aloe vera gel as a natural sunscreen. Use a rinse made of black tea or hibiscus water to protect hair from UV damage."
+    },
+    {
+        title: "Chlorine-Damaged Hair",
+        image: "./project image/project image/chlorine_damage.png",
+        description: "Chlorine in swimming pools strips natural oils, leading to dry, brittle, and discolored hair.",
+        prevention: "Rinse hair with clean water before swimming. Apply a protective layer of coconut or olive oil. Wash hair with apple cider vinegar to remove chlorine buildup."
+    },
+    {
+        title: "Postpartum Hair Loss",
+        image: "./project image/project image/postpartum_hair_loss.png",
+        description: "Hormonal changes after childbirth can cause temporary hair shedding.",
+        prevention: "Massage with castor oil to promote regrowth. Consume iron-rich foods like spinach and lentils. Include biotin and folic acid supplements in your diet."
+    },
+    {
+        title: "Hormonal Hair Loss",
+        image: "./project image/project image/hormonal_hair_loss.png",
+        description: "Imbalances in hormones, such as thyroid issues or PCOS, can lead to excessive hair loss.",
+        prevention: "Use bhringraj and Brahmi oil for scalp massage. Maintain a balanced diet with omega-3 fatty acids and zinc. Manage stress through yoga and meditation."
+    },
+    {
+        title: "Psoriasis on Scalp",
+        image: "./project image/project image/Psoriasis on Scalp.png",
+        description: "A chronic autoimmune condition causing flaky, red, and inflamed patches on the scalp.",
+        prevention: "Apply aloe vera and turmeric paste to soothe inflammation. Use tea tree oil mixed with coconut oil. Avoid harsh chemical-based shampoos and opt for mild herbal cleansers."
+    },
+    {
+        title: "Slow Hair Growth",
+        image: "./project image/project image/Slow Hair Growth.png",
+        description: "Hair grows at a slower rate due to poor scalp circulation or nutrient deficiencies.",
+        prevention: "Massage with rosemary oil to stimulate circulation. Consume protein-rich foods like eggs, nuts, and fish. Use a hair mask made of fenugreek seeds and yogurt."
+    },
+    {
+        title: "Dull and Lackluster Hair",
+        image: "./project image/project image/Dull and Lackluster Hair.png",
+        description: "Hair loses its shine and appears lifeless due to pollution, styling, or lack of moisture.",
+        prevention: "Rinse hair with rice water for natural shine. Use argan oil or olive oil as a leave-in treatment. Avoid excessive heat styling and chemical treatments."
+    },
+    {
+        title: "Excessive Hair Shedding",
+        image: "./project image/project image/Excessive Hair Shedding.png",
+        description: "Hair shedding beyond the normal daily loss due to stress, nutrition, or illness.",
+        prevention: "Massage with hibiscus-infused oil for strengthening. Include iron and vitamin C-rich foods like oranges and bell peppers. Stay hydrated and reduce stress through meditation."
+    },
+    {
+        title: "Hard Water Damage",
+        image: "./project image/project image/Hard Water Damage.png",
+        description: "Minerals in hard water can cause hair dryness, buildup, and scalp irritation.",
+        prevention: "Use a filtered showerhead to remove harsh minerals. Rinse with diluted apple cider vinegar weekly. Apply aloe vera gel as a conditioning treatment."
+    },
+    {
+        title: "Chemical Treatment Damage",
+        image: "./project image/project image/Chemical Treatment Damage.png",
+        description: "Frequent hair coloring, perming, or straightening weakens hair structure, making it fragile and prone to breakage.",
+        prevention: "Apply deep conditioning masks with honey and yogurt. Use coconut oil before chemical treatments as a protective layer. Limit chemical treatments and opt for natural alternatives."
     }
 ];
 
@@ -168,7 +313,7 @@ data.forEach(item => {
     
     card.innerHTML = `
         <div class=" p-4 rounded-2xl">
-            <div class="flex  ">
+            <div class="flex flex-col justify-between  ">
                 <img class="aspect-square h-40 w-40 mr-4 hover:scale-105 transition-all duration-100 ease-in-out rounded-2xl" src="${item.image}" alt="">
                 
                     
